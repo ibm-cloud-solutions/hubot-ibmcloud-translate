@@ -14,35 +14,33 @@
     "lint": "eslint src/**/*.js test/*.js index.js",
     "postinstall": "initDb src/nlc/NLC.json",
     "test": ". test/.env && mocha test",
-    "coverage": ". test/.env && istanbul cover -x '**/coverage/**' -x '**/tools/**' --include-all-sources --report lcov --report cobertura --report text --dir ./gh-pages/coverage _mocha -- test",
-    "release": "node tools/publish"
+    "coverage": ". test/.env && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "author": "ibm-cloud-solutions",
   "license": "Apache-2.0",
   "devDependencies": {
     "chai": "^3.5.0",
     "coffee-script": "^1.10.0",
+    "coveralls": "^2.11.12",
     "eslint": "^2.9.0",
     "eslint-config-strongloop": "^2.0.1",
     "hubot": "^2.19.0",
     "hubot-fb": "^3.0.0",
     "hubot-help": "^0.2.0",
-    "hubot-ibmcloud-auth": ">=0.0.14",
-    "hubot-ibmcloud-nlc": ">=0.0.25",
+    "hubot-ibmcloud-auth": "latest",
+    "hubot-ibmcloud-nlc": "latest",
     "hubot-shell": "^1.0.2",
     "hubot-slack": "^3.4.2",
     "hubot-test-helper": "^1.4.4",
     "istanbul": "0.4.0",
-    "istanbul-cobertura-badger": "1.2.1",
     "mocha": "^2.4.5",
     "mocha-sprinkles": "^2.2.1",
     "nock": "^8.0.0",
-    "rewire": "2.5.1",
-    "shelljs": "^0.7.0"
+    "rewire": "2.5.1"
   },
   "peerDependencies": {
     "hubot": "^2.19.0",
-    "hubot-ibmcloud-formatter": ">=0.0.29",
+    "hubot-ibmcloud-formatter": ">= 0.0.29",
     "i18n-2": "^0.6.3"
   },
   "engines": {
@@ -53,9 +51,9 @@
     "index.js"
   ],
   "dependencies": {
-    "hubot-ibmcloud-cognitive-lib": ">=0.0.26",
-    "hubot-ibmcloud-activity-emitter": ">=0.0.3",
-    "hubot-ibmcloud-utils": ">=0.0.8",
+    "hubot-ibmcloud-cognitive-lib": "latest",
+    "hubot-ibmcloud-activity-emitter": "latest",
+    "hubot-ibmcloud-utils": "latest",
     "hubot-conversation": "^1.1.1",
     "lodash": "^4.13.1",
     "watson-developer-cloud": "^1.12.0"
@@ -66,6 +64,8 @@
     "watson",
     "ibm",
     "translation",
-    "slack"
+    "slack",
+    "ibm",
+    "ibm cloud"
   ]
 }

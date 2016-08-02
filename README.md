@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/ibm-cloud-solutions/hubot-ibmcloud-translate.svg?branch=master)](https://travis-ci.org/ibm-cloud-solutions/hubot-ibmcloud-translate)
+[![Coverage Status](https://coveralls.io/repos/github/ibm-cloud-solutions/hubot-ibmcloud-translate/badge.svg?branch=cleanup)](https://coveralls.io/github/ibm-cloud-solutions/hubot-ibmcloud-translate?branch=master)
+[![Dependency Status](https://dependencyci.com/github/ibm-cloud-solutions/hubot-ibmcloud-translate/badge)](https://dependencyci.com/github/ibm-cloud-solutions/hubot-ibmcloud-translate)
+[![npm](https://img.shields.io/npm/v/hubot-ibmcloud-translate.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-ibmcloud-translate)
+
 # hubot-ibmcloud-translate
 
 A Hubot script for translating messages with [IBM Watson Language Translation](https://console.ng.bluemix.net/catalog/services/language-translation/).
@@ -10,7 +15,7 @@ A Hubot script for translating messages with [IBM Watson Language Translation](h
 * [License](#license)
 * [Contribute](#contribute)
 
-## Usage <a id="usage"></a>
+## Usage
 
 Steps for adding this to your existing hubot:
 
@@ -27,20 +32,20 @@ _Note_: `HUBOT_WATSON_TRANSLATE_API` is optional.
 
 5. Start up your bot & off to the races!
 
-## Commands <a id="commands"></a>
+## Commands
 - `hubot translate help` - Show available commands in the ibmcloud translate category.
 - `hubot translate phrase <language> <phrase>` - Translate a phrase to a language.
 - `hubot translate list languages` - Show available languages to use for translation.
 
-## Hubot Adapter Setup <a id="hubot-adapter-setup"></a>
+## Hubot Adapter Setup
 
 Hubot supports a variety of adapters to connect to popular chat clients.  For more feature rich experiences you can setup the following adapters:
-- [Slack setup](./docs/adapters/slack.md)
-- [Facebook Messenger setup](./docs/adapters/facebook.md)
+- [Slack setup](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/slack.md)
+- [Facebook Messenger setup](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/facebook.md)
 
-## Development <a id="development"></a>
+## Development
 
-Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) before starting any work.  Steps for running this script for development purposes:
+Please refer to the [CONTRIBUTING.md](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/CONTRIBUTING.md) before starting any work.  Steps for running this script for development purposes:
 
 ### Configuration Setup
 
@@ -68,13 +73,13 @@ Hubot supports a variety of adapters to connect to popular chat clients.
 
 If you just want to use:
  - Terminal: run `npm run start`
- - [Slack: link to setup instructions](docs/adapters/slack.md)
- - [Facebook Messenger: link to setup instructions](docs/adapters/facebook.md)
+ - [Slack: link to setup instructions](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/slack.md)
+ - [Facebook Messenger: link to setup instructions](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/facebook.md)
 
-## License <a id="license"></a>
+## License
 
-See [LICENSE.txt](./LICENSE.txt) for license information.
+See [LICENSE.txt](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/LICENSE.txt) for license information.
 
-## Contribute <a id="contribute"></a>
+## Contribute
 
-Please check out our [Contribution Guidelines](./CONTRIBUTING.md) for detailed information on how you can lend a hand.
+Please check out our [Contribution Guidelines](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/CONTRIBUTING.md) for detailed information on how you can lend a hand.
