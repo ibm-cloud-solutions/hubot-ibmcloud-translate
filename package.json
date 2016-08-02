@@ -21,6 +21,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coffee-script": "^1.10.0",
+    "coveralls": "^2.11.12",
     "eslint": "^2.9.0",
     "eslint-config-strongloop": "^2.0.1",
     "hubot": "^2.19.0",
@@ -39,7 +40,7 @@
   },
   "peerDependencies": {
     "hubot": "^2.19.0",
-    "hubot-ibmcloud-formatter": "latest",
+    "hubot-ibmcloud-formatter": ">= 0.0.29",
     "i18n-2": "^0.6.3"
   },
   "engines": {
