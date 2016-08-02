@@ -1,0 +1,71 @@
+{
+  "name": "hubot-ibmcloud-translate",
+  "version": "0.0.23",
+  "description": "A Hubot script for translating messages with IBM Watson Language Translation",
+  "main": "index.js",
+  "respository": {
+    "url": "https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "source config/env && hubot -a shell",
+    "slack": "source config/env && hubot -a slack",
+    "facebook": "source config/env && hubot -a fb",
+    "lint": "eslint src/**/*.js test/*.js index.js",
+    "postinstall": "initDb src/nlc/NLC.json",
+    "test": ". test/.env && mocha test",
+    "coverage": ". test/.env && istanbul cover -x '**/coverage/**' -x '**/tools/**' --include-all-sources --report lcov --report cobertura --report text --dir ./gh-pages/coverage _mocha -- test",
+    "release": "node tools/publish"
+  },
+  "author": "ibm-cloud-solutions",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.10.0",
+    "eslint": "^2.9.0",
+    "eslint-config-strongloop": "^2.0.1",
+    "hubot": "^2.19.0",
+    "hubot-fb": "^3.0.0",
+    "hubot-help": "^0.2.0",
+    "hubot-ibmcloud-auth": ">=0.0.14",
+    "hubot-ibmcloud-nlc": ">=0.0.25",
+    "hubot-shell": "^1.0.2",
+    "hubot-slack": "^3.4.2",
+    "hubot-test-helper": "^1.4.4",
+    "istanbul": "0.4.0",
+    "istanbul-cobertura-badger": "1.2.1",
+    "mocha": "^2.4.5",
+    "mocha-sprinkles": "^2.2.1",
+    "nock": "^8.0.0",
+    "rewire": "2.5.1",
+    "shelljs": "^0.7.0"
+  },
+  "peerDependencies": {
+    "hubot": "^2.19.0",
+    "hubot-ibmcloud-formatter": ">=0.0.29",
+    "i18n-2": "^0.6.3"
+  },
+  "engines": {
+    "node": ">= 4.2.0"
+  },
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "dependencies": {
+    "hubot-ibmcloud-cognitive-lib": ">=0.0.26",
+    "hubot-ibmcloud-activity-emitter": ">=0.0.3",
+    "hubot-ibmcloud-utils": ">=0.0.8",
+    "hubot-conversation": "^1.1.1",
+    "lodash": "^4.13.1",
+    "watson-developer-cloud": "^1.12.0"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "watson",
+    "ibm",
+    "translation",
+    "slack"
+  ]
+}

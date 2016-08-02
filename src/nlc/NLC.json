@@ -1,0 +1,50 @@
+{   "name": "IBMcloudTranslate",
+	"version": "0.0.1",
+	"classes": [
+		{
+			"class": "translate.help",
+			"emittarget": "translate.help",
+			"texts": [
+				"I want help with translation.",
+				"What can I do with translation",
+				"help translate"
+			]
+		},
+		{
+			"class": "translate.list",
+			"emittarget": "translate.list",
+			"texts": [
+				"Show me the translatable languages",
+				"What languages are available for translation?",
+				"List all my language options"
+			]
+		},
+		{
+			"class": "translate.phrase",
+			"emittarget": "translate.phrase",
+			"texts": [
+				"Can you help me translate some text?",
+				"Please help me convert a phrase to another language.",
+				"translate the following"
+			],
+			"parameters" : [
+				{
+					"name": "targetLanguage",
+					"type": "entity",
+					"prompt": "OK. What is the language you are targeting?"
+				},
+				{
+					"name": "phraseToTranslate",
+					"type": "entity",
+					"prompt": "OK. What is the phrase you want translated?"
+				}
+			]
+		}
+	],
+	"parameter.values" : [
+		{
+			"name": "targetLanguage",
+			"values": ["Arabic", "English", "Spanish", "French", "Portuguese"]
+		}
+	]
+}

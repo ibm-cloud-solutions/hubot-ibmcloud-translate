@@ -1,0 +1,30 @@
+{
+    "help.translate.phrase": "Will translate a <phrase> to a <language>.  The language of the <phrase> is automatically detected.  <phrase> must be less than 500 characters.",
+    "help.translate.list": "lists the languages that are supported",
+
+    "translate.failed.to.load.languages": "Watson failed to respond to get identifiable languages",
+    "translate.failed.to.load.models": "Watson failed to provide models",
+    "translate.supported.languages.loaded": "Supported languages loaded.",
+    "translate.target.languages.loaded": "Supported target locales: %s",
+    "translate.models.loaded": "Supported models: %s",
+    "translate.target.invalid": "'%s' is not a valid target language.  Please select your target language from the list above.",
+    "translate.target.unknown.error": "Target language could not be determined.",
+    "translate.target.success": "Your phrase will be translated into %s.",
+    "translate.source.invalid": "Watson failed to detect language for your phrase.  Please manually select the source language from the list above.",
+    "translate.source.watson.invalid": "Watson found a set of potential languages for your phrase.  Please select the source language from the list above (ordered by confidence).",
+    "translate.source.languages.loaded": "Supported source to target transtions: %s",
+    "translate.source.success": "Your phrase will be treated as the %s language.",
+    "translate.source.unknown.error": "Language of phrase could not be determined.",
+    "translate.phrase.info": "Translating phrase from %s to %s.  One moment.",
+    "translate.phrase.output": "In %s you would say: %s%s",
+    "translate.phrase.error": "Oops something went wrong!  I cannot translate that phrase.",
+    "translate.supported.languages": "Watson supports translation for the following language combinations:",
+    "translate.startup.fail": "Translation service is not available.  Check error logs.  %s",
+
+    "conversation.timed.out": "Our conversation timed out.  You can try again later.",
+    "conversation.try.again.or.exit": "That is not one of the choices. Try again, or type *exit*.",
+    "conversation.try.again.yes.no": "That is not one of the choices. Try *yes* or *no*.",
+
+    "cognitive.parse.problem.targetLanguage": "I'm having problems understanding the target language. To translate a phrase use *translate phrase [language] [phrase]*",
+    "cognitive.parse.problem.phraseToTranslate": "I'm having problems understanding the phrase to translate. To set the namespace use *translate phrase [language] [phrase]*"
+}
