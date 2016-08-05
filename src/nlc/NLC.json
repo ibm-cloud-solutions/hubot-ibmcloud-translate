@@ -3,6 +3,7 @@
 	"classes": [
 		{
 			"class": "translate.help",
+			"description": "Help with translation",
 			"emittarget": "translate.help",
 			"texts": [
 				"I want help with translation.",
@@ -12,6 +13,7 @@
 		},
 		{
 			"class": "translate.list",
+			"description": "List languages supported for translation",
 			"emittarget": "translate.list",
 			"texts": [
 				"Show me the translatable languages",
@@ -21,6 +23,7 @@
 		},
 		{
 			"class": "translate.phrase",
+			"description": "Translate a phrase",
 			"emittarget": "translate.phrase",
 			"texts": [
 				"Can you help me translate some text?",
