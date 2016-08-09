@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/ibm-cloud-solutions/hubot-ibmcloud-translate.svg?branch=master)](https://travis-ci.org/ibm-cloud-solutions/hubot-ibmcloud-translate)
-[![Coverage Status](https://coveralls.io/repos/github/ibm-cloud-solutions/hubot-ibmcloud-translate/badge.svg?branch=cleanup)](https://coveralls.io/github/ibm-cloud-solutions/hubot-ibmcloud-translate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/ibm-cloud-solutions/hubot-ibmcloud-translate/badge.svg?branch=master)](https://coveralls.io/github/ibm-cloud-solutions/hubot-ibmcloud-translate?branch=master)
 [![Dependency Status](https://dependencyci.com/github/ibm-cloud-solutions/hubot-ibmcloud-translate/badge)](https://dependencyci.com/github/ibm-cloud-solutions/hubot-ibmcloud-translate)
 [![npm](https://img.shields.io/npm/v/hubot-ibmcloud-translate.svg?maxAge=2592000)](https://www.npmjs.com/package/hubot-ibmcloud-translate)
 
