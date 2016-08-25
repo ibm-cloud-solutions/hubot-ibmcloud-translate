@@ -3,7 +3,7 @@
   "version": "0.0.23",
   "description": "A Hubot script for translating messages with IBM Watson Language Translation",
   "main": "index.js",
-  "respository": {
+  "repository": {
     "url": "https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate",
     "type": "git"
   },
