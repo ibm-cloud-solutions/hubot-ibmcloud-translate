@@ -11,6 +11,7 @@ A Hubot script for translating messages with [IBM Watson Language Translation](h
 * [Usage](#usage)
 * [Commands](#commands)
 * [Hubot Adapter Setup](#hubot-adapter-setup)
+* [Cognitive Setup](#cognitive-setup)
 * [Development](#development)
 * [License](#license)
 * [Contribute](#contribute)
@@ -42,6 +43,10 @@ _Note_: `HUBOT_WATSON_TRANSLATE_API` is optional.
 Hubot supports a variety of adapters to connect to popular chat clients.  For more feature rich experiences you can setup the following adapters:
 - [Slack setup](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/slack.md)
 - [Facebook Messenger setup](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-translate/blob/master/docs/adapters/facebook.md)
+
+## Cognitive Setup
+
+This project supports natural language interactions using Watson and other Bluemix services.  For more information on enabling these features, refer to [Cognitive Setup](https://github.com/ibm-cloud-solutions/hubot-ibmcloud-nlc/blob/master/docs/cognitiveSetup.md).
 
 ## Development
 
