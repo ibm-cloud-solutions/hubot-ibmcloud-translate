@@ -46,7 +46,7 @@
     "hubot-ibmcloud-utils": ">=0.0.14",
     "hubot-conversation": "^1.1.1",
     "lodash": "^4.13.1",
-    "watson-developer-cloud": "^1.12.0",
+    "watson-developer-cloud": ">=2.1.4",
     "i18n-2": "^0.6.3"
   },
   "engines": {
