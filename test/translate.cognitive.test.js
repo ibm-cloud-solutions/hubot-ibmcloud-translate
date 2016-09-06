@@ -19,7 +19,7 @@ const rewire = require('rewire');
 const translateAPI = rewire('../src/scripts/translate.js');
 const nock = require('nock');
 
-var i18n = new (require('i18n-2'))({
+const i18n = new (require('i18n-2'))({
 	locales: ['en'],
 	extension: '.json',
 	// Add more languages to the list of locales when the files are created.
@@ -164,7 +164,7 @@ describe('Test translate via Natural Language', function() {
 				}
 			});
 
-			var res = { message: {text: 'Show translatable languages', user: {id: 'anId'}}, response: room };
+			let res = { message: {text: 'Show translatable languages', user: {id: 'anId'}}, response: room };
 			room.robot.emit('translate.list', res, {});
 		});
 	});
@@ -183,7 +183,7 @@ describe('Test translate via Natural Language', function() {
 				}
 			});
 
-			var res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
+			let res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
 			room.robot.emit('translate.phrase', res, {targetLanguage: 'Spanish', phraseToTranslate: 'hello'});
 		});
 
@@ -196,7 +196,7 @@ describe('Test translate via Natural Language', function() {
 				}
 			});
 
-			var res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
+			let res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
 			room.robot.emit('translate.phrase', res, {phraseToTranslate: 'hello'});
 		});
 
@@ -209,7 +209,7 @@ describe('Test translate via Natural Language', function() {
 				}
 			});
 
-			var res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
+			let res = { message: {text: 'translate the following phrase into spanish hello', user: {id: 'anId'}}, response: room };
 			room.robot.emit('translate.phrase', res, {targetLanguage: 'Spanish'});
 		});
 	});
@@ -225,7 +225,7 @@ describe('Test translate via Natural Language', function() {
 				}
 			});
 
-			var res = { message: {text: 'help translate', user: {id: 'anId'}}, response: room };
+			let res = { message: {text: 'help translate', user: {id: 'anId'}}, response: room };
 			room.robot.emit('translate.help', res, {});
 		});
 	});
