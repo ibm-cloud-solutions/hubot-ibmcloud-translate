@@ -25,7 +25,7 @@
 const path = require('path');
 const TAG = path.basename(__filename);
 
-var i18n = new (require('i18n-2'))({
+const i18n = new (require('i18n-2'))({
 	locales: ['en'],
 	extension: '.json',
 	// Add more languages to the list of locales when the files are created.

@@ -26,11 +26,11 @@ const activity = require('hubot-ibmcloud-activity-emitter');
 const utils = require('hubot-ibmcloud-utils').utils;
 
 const CONFIDENCE_THRESHOLD = parseFloat(process.env.CONFIDENCE_THRESHOLD || 0.10);
-var HUBOT_WATSON_TRANSLATE_USER = process.env.HUBOT_WATSON_TRANSLATE_USER;
-var HUBOT_WATSON_TRANSLATE_PASSWORD = process.env.HUBOT_WATSON_TRANSLATE_PASSWORD;
-var HUBOT_WATSON_TRANSLATE_API = process.env.HUBOT_WATSON_TRANSLATE_API;
+const HUBOT_WATSON_TRANSLATE_USER = process.env.HUBOT_WATSON_TRANSLATE_USER;
+const HUBOT_WATSON_TRANSLATE_PASSWORD = process.env.HUBOT_WATSON_TRANSLATE_PASSWORD;
+const HUBOT_WATSON_TRANSLATE_API = process.env.HUBOT_WATSON_TRANSLATE_API;
 
-var i18n = new (require('i18n-2'))({
+const i18n = new (require('i18n-2'))({
 	locales: ['en'],
 	extension: '.json',
 	// Add more languages to the list of locales when the files are created.
@@ -42,16 +42,16 @@ var i18n = new (require('i18n-2'))({
 // At some point we need to toggle this setting based on some user input.
 i18n.setLocale('en');
 
-var languageTranslator;
+let languageTranslator;
 
-var startupBegan;
-var startupResult;
-var startupPromises = [];
-var LANGUAGE_NAME_TO_CODE;
-var LANGUAGE_CODE_TO_NAME;
-var TARGET_LANGUAGE_CODES;
-var SOURCE_TO_TARGET_LANGUAGE_CODES;
-var SOURCE_TARGET_MODEL_IDS;
+let startupBegan;
+let startupResult;
+let startupPromises = [];
+let LANGUAGE_NAME_TO_CODE;
+let LANGUAGE_CODE_TO_NAME;
+let TARGET_LANGUAGE_CODES;
+let SOURCE_TO_TARGET_LANGUAGE_CODES;
+let SOURCE_TARGET_MODEL_IDS;
 
 function startup(robot, res) {
 	if (startupResult) {
